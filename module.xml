@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+  <Document name="pivottopowerbi.ZPM">
+    <Module>
+      <Name>pivottopowerbi</Name>
+      <Description>Demo Custom Action for IRIS BI that converts Pivot results to new table to use inside PowerBI</Description>
+      <Version>1.0.0</Version>
+      <Packaging>module</Packaging>
+      <SourcesRoot>src</SourcesRoot>
+      <Resource Name="PivotToPowerBI.PKG"/>
+    </Module>
+  </Document>
+</Export>
