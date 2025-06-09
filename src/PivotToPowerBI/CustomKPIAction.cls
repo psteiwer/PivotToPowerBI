@@ -29,7 +29,8 @@ ClassMethod %OnDashboardAction(pAction As %String, pContext As %ZEN.proxyObject)
             }
 		    Set tCurrFilterSpec = $P(tCurrFilterSpec," ",2,*)
         }
-		Set tNewTableName = "PivotToPowerBI.DesktopDemo"
+		Set tNewTableName = "PivotToPowerBI."_pContext.cubeName
+        Do $system.OBJ.Delete(tNewTableName,"e /displayerror=0 /displaylog=0")
 		Set tSC = ##class(%DeepSee.ResultSet).%CreateTable(pContext.cubeName,tNewTableName,tCurrFilterSpec)
 	}
     
