@@ -15,15 +15,15 @@
 ### Demo in action
 Steps 1-3
 
-![Setup Screenshot](https://github.com/psteiwer/PivotToPowerBI/blob/main/Assets/Demo1.PNG)
+![Setup Screenshot](https://github.com/psteiwer/PivotToPowerBI/blob/main/Assets/Demo1.png)
 
 Steps 5-7 (DateOfSale dragged to rows, cell for 2022 clicked, PivotToJupyer custom action selected
 
-![Analyzer Screenshot](https://github.com/psteiwer/PivotToPowerBI/blob/main/Assets/Demo2.PNG)
+![Analyzer Screenshot](https://github.com/psteiwer/PivotToPowerBI/blob/main/Assets/Demo2.png)
 
 Step 8
 
-![PowerBI Screenshot](https://github.com/psteiwer/PivotToPowerBI/blob/main/Assets/Demo3.PNG)
+![PowerBI Screenshot](https://github.com/psteiwer/PivotToPowerBI/blob/main/Assets/Demo3.png)
 
 ## Install with ZPM
 ```zpm "install pivottopowerbi"```
