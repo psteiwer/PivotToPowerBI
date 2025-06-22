@@ -32,6 +32,11 @@ ClassMethod %OnDashboardAction(pAction As %String, pContext As %ZEN.proxyObject)
 		Set tNewTableName = "PivotToPowerBI."_pContext.cubeName
         Do $system.OBJ.Delete(tNewTableName,"e /displayerror=0 /displaylog=0")
 		Set tSC = ##class(%DeepSee.ResultSet).%CreateTable(pContext.cubeName,tNewTableName,tCurrFilterSpec)
+        Set tMessage="PivotToPowerBI Successful"
+        If $$$ISERR(tSC) {
+            Set tMessage="Error in PivotToPowerBI"
+        }
+        Set pContext.command = "alert:"_tMessage
 	}
     
 	If (pAction="PivotToPowerBI") { 
